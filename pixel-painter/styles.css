@@ -30,10 +30,10 @@ header h1 {
 #canvas {
   border: 3px solid #393e41;
   display: grid;
-  grid-template-columns: repeat(30, 30px);
-  grid-template-rows: repeat(30, 30px);
-  height: 900px;
-  width: 900px;
+  grid-template-columns: repeat(30, 16.67px);
+  grid-template-rows: repeat(30, 16.67px);
+  height: 500px;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -42,8 +42,8 @@ header h1 {
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
-  height: 30px;
-  width: 30px;
+  height: 16.67px;
+  width: 16.67px;
 }
 
 #current-color {
