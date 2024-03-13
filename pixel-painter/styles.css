@@ -30,19 +30,20 @@ header h1 {
 #canvas {
   border: 3px solid #393e41;
   display: grid;
-  grid-template-columns: repeat(10, 50px);
-  height: 500px;
+  grid-template-columns: repeat(30, 30px);
+  grid-template-rows: repeat(30, 30px);
+  height: 900px;
+  width: 900px;
   margin: 0 auto;
-  width: 500px;
 }
 
 .cell {
-  border: 1px solid #393e41;
+  border: 1px solid lightgray;
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
-  height: 50px;
-  width: 50px;
+  height: 30px;
+  width: 30px;
 }
 
 #current-color {
@@ -76,6 +77,7 @@ header h1 {
 }
 
 nav {
+  margin-top: 150px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -88,4 +90,20 @@ a {
 a:hover {
   background-color: blanchedalmond;
   opacity: 0.5;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 20px ;
+}
+
+#reset, #fill {
+  width: 100px;
+  height: 2em;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
 }
