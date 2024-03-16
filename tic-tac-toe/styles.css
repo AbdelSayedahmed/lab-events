@@ -17,12 +17,11 @@ h1 {
 }
 
 .tic-tac-toe {
-  width: 370px;
-  margin: auto;
+  width: 360px;
+  margin: 25px auto 0px;
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2em 0;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
 }
 
 .square {
@@ -54,13 +53,13 @@ nav {
   justify-content: space-evenly;
 }
 
-button {
+#reset-button {
   padding: 1em;
   font-family: "Raleway";
   font-weight: bold;
   font-size: 1em;
   display: block;
-  margin: auto;
+  margin: 2em auto;
   background: plum;
 }
 
@@ -72,4 +71,13 @@ a {
 a:hover {
   background-color: blanchedalmond;
   opacity: 0.5;
+}
+
+#messageBox {
+  display: none;
+  text-align: center;
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 1em auto 1em;
+  width: 50%;
 }
