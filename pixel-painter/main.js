@@ -19,7 +19,7 @@ resetBtn.addEventListener("click", (event) => {
 
 for (let color of colors) {
   const currColor = color.getAttribute("style").split(" ")[1];
-  color.addEventListener("click", () => {
+  color.addEventListener("click", () => { 
     currentColor.style.background = currColor;
   });
 }
